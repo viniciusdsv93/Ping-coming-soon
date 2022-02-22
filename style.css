@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+header {
+    font-weight: 700;
+    margin-top: 65px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 80%;
+}
+
+.launching {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.launching h1 {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-size: 40px;
+}
+
+.launching span {
+    font-weight: 700;
+    color: #000;
+}
+
+.launching p {
+    margin-bottom: 20px;
+}
+
+.launching-searchbox {
+    width: 125%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.input-email,
+#input-submit {
+    padding: 14px 28px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.input-error {
+    flex: 3;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 30px;
+    font-style: italic;
+    position: absolute;
+}
+
+.input-email {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 59%);
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+::placeholder {
+    color: hsl(0, 0%, 59%);
+}
+
+#input-submit {
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+    max-height: 45.46px;
+}
+
+#input-submit:hover {
+    background-color: hsl(223, 87%, 73%);
+}
+
+main {
+    max-width: 520px;
+    width: 85vw;
+    margin: 70px 0;
+}
+
+main img {
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.social-media div {
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.social-media div:hover {
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+}
+
+.social-media img {
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.attribution a {
+    color: hsl(223, 87%, 63%);
+    font-weight: 600;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .launching-searchbox {
+        width: 75vw;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .launching h1 {
+        font-size: 25px;
+    }
+
+    .error-message {
+        position: relative;
+        text-align: center;
+        padding-left: 0;
+    }
+}
